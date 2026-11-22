@@ -1,0 +1,18 @@
+59.63 Hz: 440.0 Hz, duration 1.0000, underruns 0
+51.60 Hz: 440.2 Hz, duration 0.9993, underruns 0
+47.20 Hz: 440.2 Hz, duration 0.9997, underruns 0
+41.20 Hz: 440.1 Hz, duration 1.0001, underruns 0
+33.20 Hz: 439.8 Hz, duration 0.9996, underruns 0
+25.20 Hz: 439.7 Hz, duration 0.9992, underruns 0
+41.20 Hz, original PCM: 21 underruns
+synthetic, mode 0, costs [(12, 7.7)]: draw 59.6/s, no missing audio
+synthetic, mode 0, costs [(23, 10.5)]: draw 27.4/s, no missing audio
+synthetic, mode 0, costs [(37.8, 22.1)]: draw 9.6/s, no missing audio
+synthetic, mode 0, costs [(12, 7.7), (27.5, 15), (37.8, 22.1), (17, 8)]: draw 30.0/s, no missing audio
+synthetic, mode 1, costs [(12, 7.7)]: draw 29.8/s, no missing audio
+synthetic, mode 1, costs [(23, 10.5)]: draw 29.8/s, no missing audio
+synthetic, mode 1, costs [(37.8, 22.1)]: draw 26.5/s, no missing audio
+synthetic, mode 1, costs [(12, 7.7), (27.5, 15), (37.8, 22.1), (17, 8)]: draw 28.8/s, no missing audio
+Roms\dynwaru.zip, mode 0, costs [(12, 7.7), (27.5, 15), (37.8, 22.1), (17, 8)]: draw 29.4/s, no missing audio
+Roms\wonder3.zip, mode 0, costs [(12, 7.7), (27.5, 15), (37.8, 22.1), (17, 8)]: draw 29.4/s, no missing audio
+Roms\sfzch.zip, mode 0, costs [(12, 7.7), (27.5, 15), (37.8, 22.1), (17, 8)]: draw 29.4/s, no missing audio

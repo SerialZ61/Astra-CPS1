@@ -1,0 +1,79 @@
+{
+  "elf": "f4180eaf56fbc9c24d04e69733ed3bdfe018332215c94dc0647c6bfb9ce4069f",
+  "rom": "622fa72606ac0b07ac83192256e6edf062f61856a0a3f6009befb7d64a7a06b8",
+  "frames": 5200,
+  "digests": {
+    "pixels": "720aa29898cbf394c5b9d5fb621269c1a09ba9b92d1cd4d09e3e5339a32a5cb0",
+    "stereo": "29e9540c73df5495c291acdbe5b081dd94f868ebb0bd530e9514d185db612412",
+    "ram": "a14967890fff0f6b5939198c9698c60be39e76cea241905e2d9ba16c54c8864b",
+    "cpu": "c7ef77521a079990a8f81aae145b9e9806812176e062e5238b9b51a400441659",
+    "z80": "324facd1a4a510476565ff7390050a83faf8a524e229bb02701adc86fb0efd45",
+    "sound_ram": "be7350d6523fbc10054c9b915ca885b4fbd155b3f1c7604de7f4a6a6d77eb2e8"
+  },
+  "work_samples": {
+    "3500": {
+      "draw": true,
+      "arm_slots": 2256047
+    },
+    "3501": {
+      "draw": false,
+      "arm_slots": 1211245
+    },
+    "3700": {
+      "draw": true,
+      "arm_slots": 1916757
+    },
+    "3701": {
+      "draw": false,
+      "arm_slots": 1240161
+    },
+    "3900": {
+      "draw": true,
+      "arm_slots": 2034921
+    },
+    "3901": {
+      "draw": false,
+      "arm_slots": 1359564
+    },
+    "4100": {
+      "draw": true,
+      "arm_slots": 2361879
+    },
+    "4101": {
+      "draw": false,
+      "arm_slots": 1478193
+    },
+    "4400": {
+      "draw": true,
+      "arm_slots": 2014939
+    },
+    "4401": {
+      "draw": false,
+      "arm_slots": 1391950
+    },
+    "4650": {
+      "draw": true,
+      "arm_slots": 1981430
+    },
+    "4651": {
+      "draw": false,
+      "arm_slots": 1518850
+    },
+    "4850": {
+      "draw": true,
+      "arm_slots": 1911308
+    },
+    "4851": {
+      "draw": false,
+      "arm_slots": 1436808
+    },
+    "5050": {
+      "draw": true,
+      "arm_slots": 5325959
+    },
+    "5051": {
+      "draw": false,
+      "arm_slots": 930564
+    }
+  }
+}

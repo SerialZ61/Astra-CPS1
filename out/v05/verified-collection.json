@@ -1,0 +1,2314 @@
+[
+ {
+  "zip": "1941.zip",
+  "menu_title": "1941 - Counter Attack (World)",
+  "set": "1941",
+  "title": "1941 - Counter Attack (World)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   5,
+   5,
+   9,
+   28
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "1941j.zip",
+  "menu_title": "1941 - Counter Attack (Japan)",
+  "set": "1941j",
+  "title": "1941 - Counter Attack (Japan)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   5,
+   5,
+   9,
+   27
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "3wonderh.zip",
+  "menu_title": "Three Wonders (3wonderh)",
+  "set": "3wonderh",
+  "title": "Three Wonders (3wonderh)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 14,
+  "frames": 420,
+  "colors": [
+   3,
+   3,
+   3,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "3wonders.zip",
+  "menu_title": "Three Wonders (910520 World)",
+  "set": "3wonders",
+  "title": "Three Wonders (910520 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 13,
+  "frames": 420,
+  "colors": [
+   3,
+   3,
+   3,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "3wonderu.zip",
+  "menu_title": "Three Wonders (wonder 3 910520 USA)",
+  "set": "3wonderu",
+  "title": "Three Wonders (wonder 3 910520 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 13,
+  "frames": 420,
+  "colors": [
+   3,
+   3,
+   3,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "area88.zip",
+  "menu_title": "Area 88 (Japan)",
+  "set": "area88",
+  "title": "Area 88 (Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 8,
+  "frames": 420,
+  "colors": [
+   5,
+   1,
+   35,
+   84
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "captcomb.zip",
+  "menu_title": "Captain Commando (captcomb)",
+  "set": "captcomb",
+  "title": "Captain Commando (captcomb)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   7,
+   7,
+   7,
+   6
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "captcomj.zip",
+  "menu_title": "Captain Commando (911202 Japan)",
+  "set": "captcomj",
+  "title": "Captain Commando (911202 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   7,
+   7,
+   7,
+   6
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "captcomm.zip",
+  "menu_title": "Captain Commando (911014 World)",
+  "set": "captcomm",
+  "title": "Captain Commando (911014 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   7,
+   7,
+   7,
+   6
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "captcomu.zip",
+  "menu_title": "Captain Commando (910928 USA)",
+  "set": "captcomu",
+  "title": "Captain Commando (910928 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   7,
+   7,
+   7,
+   6
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "cawing.zip",
+  "menu_title": "Carrier Air Wing (U.S. navy 901012 etc)",
+  "set": "cawing",
+  "title": "Carrier Air Wing (U.S. navy 901012 etc)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   10,
+   1,
+   3,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "cawingj.zip",
+  "menu_title": "U.S. Navy (901012 Japan)",
+  "set": "cawingj",
+  "title": "U.S. Navy (901012 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   10,
+   1,
+   3,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "cawingr1.zip",
+  "menu_title": "Carrier Air Wing (U.S. navy 901009 etc)",
+  "set": "cawingr1",
+  "title": "Carrier Air Wing (U.S. navy 901009 etc)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   10,
+   1,
+   3,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "cawingu.zip",
+  "menu_title": "Carrier Air Wing (U.S. navy 901012 USA)",
+  "set": "cawingu",
+  "title": "Carrier Air Wing (U.S. navy 901012 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   10,
+   1,
+   3,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "chikij.zip",
+  "menu_title": "Chiki Chiki Boys (900619 Japan)",
+  "set": "chikij",
+  "title": "Chiki Chiki Boys (900619 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   3,
+   5,
+   5,
+   8
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "cworld2j.zip",
+  "menu_title": "Capcom World 2 (920611 Japan)",
+  "set": "cworld2j",
+  "title": "Capcom World 2 (920611 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   1,
+   6,
+   8,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "daimakai.zip",
+  "menu_title": "Dai Makai-Mura (Japan)",
+  "set": "daimakai",
+  "title": "Dai Makai-Mura (Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   2,
+   2,
+   13,
+   63
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "daimakr2.zip",
+  "menu_title": "Dai Makai-Mura (daimakr2)",
+  "set": "daimakr2",
+  "title": "Dai Makai-Mura (daimakr2)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   2,
+   1,
+   25,
+   63
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "dino.zip",
+  "menu_title": "Cadillacs & Dinosaurs (930201 etc)",
+  "set": "dino",
+  "title": "Cadillacs & Dinosaurs (930201 etc)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   131
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "dinoh.zip",
+  "menu_title": "Cadillacs and Dinosaurs (dinoh)",
+  "set": "dinoh",
+  "title": "Cadillacs and Dinosaurs (dinoh)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   129
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "dinoj.zip",
+  "menu_title": "Cadillacs Kyouryuu-Shinseiki (Cadillacs 930201 Japan)",
+  "set": "dinoj",
+  "title": "Cadillacs Kyouryuu-Shinseiki (Cadillacs 930201 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   5,
+   7,
+   131
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "dinopic.zip",
+  "menu_title": "Cadillacs and Dinosaurs (dinopic)",
+  "set": "dinopic",
+  "title": "Cadillacs and Dinosaurs (dinopic)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   132
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "dinopic2.zip",
+  "menu_title": "Cadillacs and Dinosaurs (dinopic2)",
+  "set": "dinopic2",
+  "title": "Cadillacs and Dinosaurs (dinopic2)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   132
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "dinou.zip",
+  "menu_title": "Cadillacs & Dinosaurs (930201 USA)",
+  "set": "dinou",
+  "title": "Cadillacs & Dinosaurs (930201 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   6,
+   6,
+   131
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "dynwar.zip",
+  "menu_title": "Dynasty Wars (World)",
+  "set": "dynwar",
+  "title": "Dynasty Wars (World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   10,
+   10,
+   14,
+   42
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "dynwarj.zip",
+  "menu_title": "Tenchi wo Kurau (Japan)",
+  "set": "dynwarj",
+  "title": "Tenchi wo Kurau (Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   10,
+   10,
+   15,
+   42
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "dynwaru.zip",
+  "menu_title": "Dynasty Wars (dynwaru)",
+  "set": "dynwaru",
+  "title": "Dynasty Wars (dynwaru)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   10,
+   10,
+   14,
+   42
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "ffight.zip",
+  "menu_title": "Final Fight (World)",
+  "set": "ffight",
+  "title": "Final Fight (World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "ffightj.zip",
+  "menu_title": "Final Fight (Japan)",
+  "set": "ffightj",
+  "title": "Final Fight (Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "ffightj1.zip",
+  "menu_title": "Final Fight (900305 Japan)",
+  "set": "ffightj1",
+  "title": "Final Fight (900305 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "ffightj2.zip",
+  "menu_title": "Final Fight (ffightj2)",
+  "set": "ffightj2",
+  "title": "Final Fight (ffightj2)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 13,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "ffightu.zip",
+  "menu_title": "Final Fight (900112 USA)",
+  "set": "ffightu",
+  "title": "Final Fight (ffightu)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 13,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "ffightua.zip",
+  "menu_title": "Final Fight (900613 USA)",
+  "set": "ffightu",
+  "title": "Final Fight (900112 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "ffightub.zip",
+  "menu_title": "Final Fight (900613 USA)",
+  "set": "ffightua",
+  "title": "Final Fight (900613 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "forgott1.zip",
+  "menu_title": "Forgotten Worlds (forgott1)",
+  "set": "forgott1",
+  "title": "Forgotten Worlds (forgott1)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 7,
+  "frames": 420,
+  "colors": [
+   11,
+   11,
+   10,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "forgottn.zip",
+  "menu_title": "Forgotten Worlds (US)",
+  "set": "forgottn",
+  "title": "Forgotten Worlds (US)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "ghouls.zip",
+  "menu_title": "Ghouls'n Ghosts (World)",
+  "set": "ghouls",
+  "title": "Ghouls'n Ghosts (World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "ghoulsu.zip",
+  "menu_title": "Ghouls'n Ghosts (US)",
+  "set": "ghoulsu",
+  "title": "Ghouls'n Ghosts (US)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   2,
+   2,
+   13,
+   63
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "knights.zip",
+  "menu_title": "Knights of the Round (911127 World)",
+  "set": "knights",
+  "title": "Knights of the Round (911127 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   7,
+   7,
+   7,
+   7
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "knightsh.zip",
+  "menu_title": "Knights of the Round (knightsh)",
+  "set": "knightsh",
+  "title": "Knights of the Round (knightsh)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 13,
+  "frames": 420,
+  "colors": [
+   7,
+   1,
+   13,
+   118
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "knightsj.zip",
+  "menu_title": "Knights of the Round (911127 Japan)",
+  "set": "knightsj",
+  "title": "Knights of the Round (911127 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   7,
+   7,
+   7,
+   7
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "knightsu.zip",
+  "menu_title": "Knights of the Round (911127 USA)",
+  "set": "knightsu",
+  "title": "Knights of the Round (911127 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   7,
+   7,
+   7,
+   7
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "kod.zip",
+  "menu_title": "The King of Dragons (910711 World)",
+  "set": "kod",
+  "title": "The King of Dragons (910711 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   6,
+   5,
+   5,
+   5
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "kodj.zip",
+  "menu_title": "The King of Dragons (Japan 910805)",
+  "set": "kodj",
+  "title": "The King of Dragons (Japan 910805)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   6,
+   6,
+   6,
+   5
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "kodu.zip",
+  "menu_title": "The King of Dragons (US 910910)",
+  "set": "kodu",
+  "title": "The King of Dragons (US 910910)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   6,
+   2,
+   2,
+   5
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "lostwrld.zip",
+  "menu_title": "Lost Worlds (Japan)",
+  "set": "lostwrld",
+  "title": "Lost Worlds (Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mbomberj.zip",
+  "menu_title": "Muscle Bomber - the body explosion (930713 Japan)",
+  "set": "mbomberj",
+  "title": "Muscle Bomber - the body explosion (930713 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   1,
+   5,
+   5,
+   31
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mbombrd.zip",
+  "menu_title": "Muscle Bomber Duo - ultimate team battle (931206 etc)",
+  "set": "mbombrd",
+  "title": "Muscle Bomber Duo - ultimate team battle (931206 etc)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   1,
+   5,
+   5,
+   65
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mbombrdj.zip",
+  "menu_title": "Muscle Bomber Duo - heat up warriors (931206 Japan)",
+  "set": "mbombrdj",
+  "title": "Muscle Bomber Duo - heat up warriors (mbombrdj)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   1,
+   5,
+   5,
+   65
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "megaman.zip",
+  "menu_title": "Mega Man - the power battle (951006 Asia)",
+  "set": "megaman",
+  "title": "Mega Man - the power battle (951006 Asia)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 8,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mercs.zip",
+  "menu_title": "Mercs (900302 etc)",
+  "set": "mercs",
+  "title": "Mercs (900302 etc)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   6,
+   6,
+   6,
+   6
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mercsj.zip",
+  "menu_title": "Senjo no Ookami II (Ookami 2 900302 Japan)",
+  "set": "mercsj",
+  "title": "Senjo no Ookami II (Ookami 2 900302 Japan)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   7,
+   7,
+   6,
+   6
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mercsu.zip",
+  "menu_title": "Mercs (900302 USA)",
+  "set": "mercsu",
+  "title": "Mercs (900302 USA)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   6,
+   6,
+   6,
+   6
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mercsua.zip",
+  "menu_title": "Mercs (900608 USA)",
+  "set": "mercsua",
+  "title": "Mercs (900608 USA)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   6,
+   6,
+   6,
+   6
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "msword.zip",
+  "menu_title": "Magic Sword (25.07.1990 World)",
+  "set": "msword",
+  "title": "Magic Sword (25.07.1990 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mswordj.zip",
+  "menu_title": "Magic Sword (23.06.1990 Japan)",
+  "set": "mswordj",
+  "title": "Magic Sword (23.06.1990 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mswordr1.zip",
+  "menu_title": "Magic Sword (90.06.23 World)",
+  "set": "mswordr1",
+  "title": "Magic Sword (90.06.23 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mswordu.zip",
+  "menu_title": "Magic Sword (25.07.1990 USA)",
+  "set": "mswordu",
+  "title": "Magic Sword (25.07.1990 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   10,
+   9,
+   9,
+   10
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "mtwins.zip",
+  "menu_title": "Mega Twins (chiki chiki boys 900619 World)",
+  "set": "mtwins",
+  "title": "Mega Twins (chiki chiki boys 900619 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   3,
+   9,
+   9,
+   8
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "nemo.zip",
+  "menu_title": "Nemo (90 11 30 World)",
+  "set": "nemo",
+  "title": "Nemo (90 11 30 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "nemoj.zip",
+  "menu_title": "Nemo (90 11 20 Japan)",
+  "set": "nemoj",
+  "title": "Nemo (90 11 20 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "pang3.zip",
+  "menu_title": "Pang! 3 (950511 Euro)",
+  "set": "pang3",
+  "title": "Pang! 3 (950511 Euro)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   3,
+   3,
+   195
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "pang3j.zip",
+  "menu_title": "Pang! 3 (950511 Japan)",
+  "set": "pang3j",
+  "title": "Pang! 3 (950511 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   3,
+   3,
+   199
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "pnickj.zip",
+  "menu_title": "Pnickies (940608 Japan)",
+  "set": "pnickj",
+  "title": "Pnickies (940608 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 8,
+  "frames": 420,
+  "colors": [
+   1,
+   2,
+   2,
+   65
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "punipic.zip",
+  "menu_title": "The Punisher (punipic)",
+  "set": "punipic",
+  "title": "The Punisher (punipic)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   1
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "punipic2.zip",
+  "menu_title": "The Punisher (punipic2)",
+  "set": "punipic2",
+  "title": "The Punisher (punipic2)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   1
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "punipic3.zip",
+  "menu_title": "The Punisher (punipic3)",
+  "set": "punipic3",
+  "title": "The Punisher (punipic3)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   1
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "punisher.zip",
+  "menu_title": "The Punisher (930422 etc)",
+  "set": "punisher",
+  "title": "The Punisher (930422 etc)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   7
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "punishrj.zip",
+  "menu_title": "The Punisher (930422 Japan)",
+  "set": "punishrj",
+  "title": "The Punisher (930422 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   7
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "punishru.zip",
+  "menu_title": "The Punisher (930422 USA)",
+  "set": "punishru",
+  "title": "The Punisher (930422 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   7,
+   7,
+   7
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "qad.zip",
+  "menu_title": "Quiz & Dragons (capcom quiz game 920701 USA)",
+  "set": "qad",
+  "title": "Quiz & Dragons (capcom quiz game 920701 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   1,
+   6,
+   15,
+   76
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "qadj.zip",
+  "menu_title": "Quiz & Dragons (940921 Japan)",
+  "set": "qadj",
+  "title": "Quiz & Dragons (940921 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   1,
+   2,
+   2,
+   2
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "qtono2.zip",
+  "menu_title": "Quiz Tonosama no Yabou 2 Zenkoku-ban (tonosama 2 950123 Japan)",
+  "set": "qtono2",
+  "title": "Quiz Tonosama no Yabou 2 Zenkoku-ban (tonosama 2 950123 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   3,
+   80
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "rockmanj.zip",
+  "menu_title": "Rockman - the power battle (950922 Japan)",
+  "set": "rockmanj",
+  "title": "Rockman - the power battle (950922 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 8,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2.zip",
+  "menu_title": "Street Fighter II - World Warrior (910522 World)",
+  "set": "sf2",
+  "title": "Street Fighter II - World Warrior (910522 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   1,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2accp2.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - Accelerator Pt.II)",
+  "set": "sf2accp2",
+  "title": "Street Fighter II' - champion edition (Hack - Accelerator Pt.II)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ce.zip",
+  "menu_title": "Street Fighter II - Champion Edition (920513 World)",
+  "set": "sf2ceea",
+  "title": "Street Fighter II - Champion Edition (920313 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2cej.zip",
+  "menu_title": "Street Fighter II - Champion Edition (920513 Japan)",
+  "set": "sf2cej",
+  "title": "Street Fighter II - Champion Edition (920513 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ceua.zip",
+  "menu_title": "Street Fighter II - Champion Edition (920313 USA)",
+  "set": "sf2ceua",
+  "title": "Street Fighter II - Champion Edition (920313 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   8,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ceub.zip",
+  "menu_title": "Street Fighter II - Champion Edition (920513 USA)",
+  "set": "sf2ceub",
+  "title": "Street Fighter II - Champion Edition (920513 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   8,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ceuc.zip",
+  "menu_title": "Street Fighter II - Champion Edition (920803 USA)",
+  "set": "sf2ceuc",
+  "title": "Street Fighter II - Champion Edition (920803 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   8,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2eb.zip",
+  "menu_title": "Street Fighter II - World Warrior (910214 World)",
+  "set": "sf2eb",
+  "title": "Street Fighter II - World Warrior (910214 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2hf.zip",
+  "menu_title": "Street Fighter II - Hyper Fighting (921209 World)",
+  "set": "sf2hf",
+  "title": "Street Fighter II - Hyper Fighting (921209 World)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2j.zip",
+  "menu_title": "Street Fighter II - World Warrior (911210 Japan)",
+  "set": "sf2j",
+  "title": "Street Fighter II - World Warrior (911210 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ja.zip",
+  "menu_title": "Street Fighter II - World Warrior (910214 Japan)",
+  "set": "sf2ja",
+  "title": "Street Fighter II - World Warrior (910214 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2jc.zip",
+  "menu_title": "Street Fighter II - World Warrior (910306 Japan)",
+  "set": "sf2jc",
+  "title": "Street Fighter II - World Warrior (910306 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2koryu.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - kouryu)",
+  "set": "sf2koryu",
+  "title": "Street Fighter II' - champion edition (Hack - kouryu)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 6,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   9,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2m1.zip",
+  "menu_title": "Street Fighter II' - champion edition (sf2m1)",
+  "set": "sf2m1",
+  "title": "Street Fighter II' - champion edition (sf2m1)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2m2.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - M-2)",
+  "set": "sf2m2",
+  "title": "Street Fighter II' - champion edition (Hack - M-2)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 6,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   1,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2m3.zip",
+  "menu_title": "Street Fighter II' - champion edition (sf2m3)",
+  "set": "sf2m3",
+  "title": "Street Fighter II' - champion edition (sf2m3)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2m4.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - M-4)",
+  "set": "sf2m4",
+  "title": "Street Fighter II' - champion edition (Hack - M-4)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 7,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2m5.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - M-5)",
+  "set": "sf2m5",
+  "title": "Street Fighter II' - champion edition (Hack - M-5)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 6,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   1,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2m6.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - M-6)",
+  "set": "sf2m6",
+  "title": "Street Fighter II' - champion edition (Hack - M-6)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 6,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   9,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2m7.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - M-7)",
+  "set": "sf2m7",
+  "title": "Street Fighter II' - champion edition (Hack - M-7)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 6,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   1,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2mdt.zip",
+  "menu_title": "Street Fighter II' - Magic Delta Turbo (sf2mdt)",
+  "set": "sf2mdt",
+  "title": "Street Fighter II' - Magic Delta Turbo (sf2mdt)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2rb.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - Rainbow set 1)",
+  "set": "sf2rb",
+  "title": "Street Fighter II' - champion edition (Hack - Rainbow set 1)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2rb2.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - Rainbow set 2)",
+  "set": "sf2rb2",
+  "title": "Street Fighter II' - champion edition (Hack - Rainbow set 2)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2rb3.zip",
+  "menu_title": "Street Fighter II' - champion edition (sf2rb3)",
+  "set": "sf2rb3",
+  "title": "Street Fighter II' - champion edition (sf2rb3)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2red.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - Red Wave)",
+  "set": "sf2red",
+  "title": "Street Fighter II' - champion edition (Hack - Red Wave)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   7,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2t.zip",
+  "menu_title": "Street Fighter II - Hyper Fighting (921209 USA)",
+  "set": "sf2t",
+  "title": "Street Fighter II - Hyper Fighting (921209 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2tj.zip",
+  "menu_title": "Street Fighter II - Hyper Fighting (921209 Japan)",
+  "set": "sf2tj",
+  "title": "Street Fighter II - Hyper Fighting (921209 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2toryu.zip",
+  "menu_title": "Street Fighter II' - champion edition (sf2toryu)",
+  "set": "sf2toryu",
+  "title": "Street Fighter II' - champion edition (sf2toryu)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   9,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2turyu.zip",
+  "menu_title": "Street Fighter II' - champion edition (sf2turyu)",
+  "set": "sf2turyu",
+  "title": "Street Fighter II' - champion edition (sf2turyu)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   9,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2turyu1.zip",
+  "menu_title": "Street Fighter II' - champion edition (sf2turyu1)",
+  "set": "sf2turyu1",
+  "title": "Street Fighter II' - champion edition (sf2turyu1)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 10,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   9,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ua.zip",
+  "menu_title": "Street Fighter II - World Warrior (910206 USA)",
+  "set": "sf2ua",
+  "title": "Street Fighter II - World Warrior (910206 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ub.zip",
+  "menu_title": "Street Fighter II - World Warrior (910214 USA)",
+  "set": "sf2ub",
+  "title": "Street Fighter II - World Warrior (910214 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ud.zip",
+  "menu_title": "Street Fighter II - World Warrior (910318 USA)",
+  "set": "sf2ud",
+  "title": "Street Fighter II - World Warrior (910318 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ue.zip",
+  "menu_title": "Street Fighter II - World Warrior (910228 USA)",
+  "set": "sf2ue",
+  "title": "Street Fighter II - World Warrior (910228 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2uf.zip",
+  "menu_title": "Street Fighter II - World Warrior (910411 USA)",
+  "set": "sf2uf",
+  "title": "Street Fighter II - World Warrior (910411 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2ui.zip",
+  "menu_title": "Street Fighter II - World Warrior (910522 USA)",
+  "set": "sf2ui",
+  "title": "Street Fighter II - World Warrior (910522 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2uk.zip",
+  "menu_title": "Street Fighter II - World Warrior (911101 USA)",
+  "set": "sf2uk",
+  "title": "Street Fighter II - World Warrior (911101 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   1,
+   8,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2v004.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - V004)",
+  "set": "sf2v004",
+  "title": "Street Fighter II' - champion edition (Hack - V004)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 9,
+  "frames": 420,
+  "colors": [
+   9,
+   9,
+   9,
+   148
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sf2yyc.zip",
+  "menu_title": "Street Fighter II' - champion edition (Hack - YYC)",
+  "set": "sf2yyc",
+  "title": "Street Fighter II' - champion edition (Hack - YYC)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 6,
+  "frames": 420,
+  "colors": [
+   1,
+   9,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "sfach.zip",
+  "menu_title": "Street Fighter Alpha (950727 CPS Changer)",
+  "set": "sfach",
+  "title": "Street Fighter Alpha (950727 CPS Changer)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   9,
+   2,
+   2,
+   2
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "sfzch.zip",
+  "menu_title": "Street Fighter Zero (951020 CPS Changer)",
+  "set": "sfzch",
+  "title": "Street Fighter Zero (951020 CPS Changer)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   9,
+   2,
+   2,
+   2
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "slammast.zip",
+  "menu_title": "Saturday Night Slam Masters (Slam Masters 930713 etc)",
+  "set": "slammast",
+  "title": "Saturday Night Slam Masters (Slam Masters 930713 etc)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   1,
+   5,
+   5,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "slammasu.zip",
+  "menu_title": "Saturday Night Slam Masters (slam masters 930713 USA)",
+  "set": "slammasu",
+  "title": "Saturday Night Slam Masters (slam masters 930713 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 0,
+  "frames": 420,
+  "colors": [
+   1,
+   4,
+   5,
+   1
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "strider.zip",
+  "menu_title": "Strider (US set 1)",
+  "set": "strider",
+  "title": "Strider (US set 1)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   2,
+   1,
+   1,
+   13
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "striderj.zip",
+  "menu_title": "Strider Hiryu (Japan set 1)",
+  "set": "striderj",
+  "title": "Strider Hiryu (Japan set 1)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   2,
+   1,
+   12,
+   13
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "stridrja.zip",
+  "menu_title": "Strider Hiryu (Japan set 2)",
+  "set": "stridrja",
+  "title": "Strider Hiryu (Japan set 2)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   2,
+   1,
+   12,
+   13
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "stridrua.zip",
+  "menu_title": "Strider (US set 2)",
+  "set": "stridrua",
+  "title": "Strider (US set 2)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   2,
+   1,
+   1,
+   13
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "unsquad.zip",
+  "menu_title": "U.N. Squadron (US)",
+  "set": "unsquad",
+  "title": "U.N. Squadron (US)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 8,
+  "frames": 420,
+  "colors": [
+   5,
+   1,
+   42,
+   83
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "varth.zip",
+  "menu_title": "Varth - operation thunderstorm (920714 etc)",
+  "set": "varth",
+  "title": "Varth - operation thunderstorm (920714 etc)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   1,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "varthj.zip",
+  "menu_title": "Varth - operation thunderstorm (920714 Japan)",
+  "set": "varthj",
+  "title": "Varth - operation thunderstorm (920714 Japan)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   1,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "varthr1.zip",
+  "menu_title": "Varth - operation thunderstorm (920612 etc)",
+  "set": "varthr1",
+  "title": "Varth - operation thunderstorm (920612 etc)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   1,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "varthu.zip",
+  "menu_title": "Varth - operation thunderstorm (920612 USA)",
+  "set": "varthu",
+  "title": "Varth - operation thunderstorm (varthu)",
+  "missing_samples": false,
+  "vertical": true,
+  "dip_groups": 12,
+  "frames": 420,
+  "colors": [
+   1,
+   1,
+   9,
+   9
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "willow.zip",
+  "menu_title": "Willow (US)",
+  "set": "willow",
+  "title": "Willow (US)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   6,
+   6,
+   30,
+   78
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "willowj.zip",
+  "menu_title": "Willow (Japan, Japanese)",
+  "set": "willowj",
+  "title": "Willow (Japan, Japanese)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   6,
+   6,
+   11,
+   16
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "willowje.zip",
+  "menu_title": "Willow (Japan, English)",
+  "set": "willowje",
+  "title": "Willow (Japan, English)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 11,
+  "frames": 420,
+  "colors": [
+   6,
+   6,
+   11,
+   16
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "wof.zip",
+  "menu_title": "Warriors of Fate (921002 etc)",
+  "set": "wof",
+  "title": "Warriors of Fate (921002 etc)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   3,
+   7,
+   26
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "wofa.zip",
+  "menu_title": "Sangokushi II (921005 Asia)",
+  "set": "wofa",
+  "title": "Sangokushi II (921005 Asia)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   3,
+   7,
+   27
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "wofh.zip",
+  "menu_title": "Sangokushi II: Sanguo Yingxiong Zhuan (wofh)",
+  "set": "wofh",
+  "title": "Sangokushi II: Sanguo Yingxiong Zhuan (wofh)",
+  "missing_samples": true,
+  "vertical": false,
+  "dip_groups": 4,
+  "frames": 420,
+  "colors": [
+   1,
+   1,
+   7,
+   7
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "wofhfh.zip",
+  "menu_title": "Sangokushi II: Huo Fenghuang (wofhfh)",
+  "set": "wofhfh",
+  "title": "Sangokushi II: Huo Fenghuang (wofhfh)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 4,
+  "frames": 420,
+  "colors": [
+   1,
+   1,
+   7,
+   7
+  ],
+  "pcm_activity": false
+ },
+ {
+  "zip": "wofj.zip",
+  "menu_title": "Tenchi wo Kurau II - Sekiheki no Tatakai (921031 Japan)",
+  "set": "wofj",
+  "title": "Tenchi wo Kurau II - Sekiheki no Tatakai (921031 Japan)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   3,
+   7,
+   53
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "wofu.zip",
+  "menu_title": "Warriors of Fate (921031 USA)",
+  "set": "wofu",
+  "title": "Warriors of Fate (921031 USA)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 1,
+  "frames": 420,
+  "colors": [
+   1,
+   3,
+   7,
+   26
+  ],
+  "pcm_activity": true
+ },
+ {
+  "zip": "wonder3.zip",
+  "menu_title": "Wonder 3 (910520 Japan)",
+  "set": "wonder3",
+  "title": "Wonder 3 (wonder3)",
+  "missing_samples": false,
+  "vertical": false,
+  "dip_groups": 14,
+  "frames": 420,
+  "colors": [
+   3,
+   3,
+   3,
+   10
+  ],
+  "pcm_activity": true
+ }
+]

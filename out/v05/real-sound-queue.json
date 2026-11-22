@@ -1,0 +1,44 @@
+[
+  {
+    "game": "daimakai",
+    "fps": 51.6,
+    "peak": 10339,
+    "frames": 560,
+    "underruns": [
+      13,
+      0
+    ],
+    "overruns": [
+      0,
+      0
+    ]
+  },
+  {
+    "game": "knights",
+    "fps": 47.2,
+    "peak": 10300,
+    "frames": 560,
+    "underruns": [
+      19,
+      0
+    ],
+    "overruns": [
+      0,
+      0
+    ]
+  },
+  {
+    "game": "msword",
+    "fps": 41.2,
+    "peak": 21213,
+    "frames": 560,
+    "underruns": [
+      27,
+      1
+    ],
+    "overruns": [
+      0,
+      0
+    ]
+  }
+]

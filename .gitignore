@@ -1,0 +1,14 @@
+/Roms/
+/roms/
+/3ds/
+/out/obj/
+/out/extra/
+/out/gpu-sdk/
+/out/verification/
+/out/AstraCPS1.*
+__pycache__/
+*.pyc
+*.zip
+*.3dsx
+*.elf
+*.ctm

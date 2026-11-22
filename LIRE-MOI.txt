@@ -1,0 +1,158 @@
+﻿ASTRA CPS1 v0.6a pour Old 3DS
+
+Installer et choisir un jeu
+
+Copie le dossier 3ds du paquet à la racine de la carte SD. Le lanceur
+se trouve dans /3ds/AstraCPS1/AstraCPS1.3dsx. Place les ZIP arcade dans
+
+    /3ds/AstraCPS1/roms/
+
+Ajoute tes propres archives de jeux dans ce dossier.
+Le menu lit les noms des fichiers au démarrage et ouvre le ZIP choisi
+au lancement. Avec un seul fichier dans la liste, le jeu démarre directement.
+Quand plusieurs copies portent le même nom, le dossier de l’application
+passe en premier. Le sélecteur lit également /roms/arcade/cps1/. Il repère
+les noms de sets connus dans /roms/ et /roms/arcade/fba2012/.
+
+Dans la liste, choisis un jeu avec la croix puis appuie sur A. Au stylet,
+touche son nom puis LANCER. Gauche et droite changent de page. X relit la
+liste. B quitte le lanceur. Si un ZIP est incomplet, A ou B ramène au menu.
+Pour un set scindé, place le ZIP du clone et le ZIP parent dans le même
+dossier. L’identification vérifie les tailles et les CRC des puces.
+
+Pendant le jeu
+
+SELECT insère un crédit. START commence la partie. La croix et le Circle
+Pad déplacent le personnage. SELECT + START revient à la liste des jeux
+et termine la partie en cours. L + R + START quitte le homebrew.
+
+Le bas de l’écran tactile contient cinq commandes, de gauche à droite.
+
+    PAUSE / REPRENDRE   Suspendre le jeu et conserver ses mesures
+    CADENCE            Alterner Auto, 30 i/s, 1 sur 2, Toutes
+    FORMAT             Changer le format ou tourner un jeu vertical
+    RÉGLER             Personnaliser les touches ou les DIP de ce jeu
+    JEUX               Terminer la partie et choisir une autre ROM
+
+Final Fight
+    A attaque, B saute et X combine attaque et saut.
+    Y met en pause, L règle la cadence et R change le format.
+
+Street Fighter II
+                  Faible     Moyen     Fort
+    Poings          Y          X        L
+    Pieds           B          A        R
+    Utilise l’écran tactile pour les réglages pendant le combat.
+
+1941 et les jeux verticaux
+    Au lancement, tiens la console normalement. Le jeu apparaît au centre
+    de l’écran supérieur en portrait 3:4. Touche FORMAT pour « Croix haut »
+    et tourne la console pour placer la croix au-dessus des boutons A/B.
+    L’image occupe alors tout l’écran supérieur. FORMAT permet aussi de
+    placer la croix en bas, puis de revenir au portrait. Les directions
+    de la croix et du Circle Pad suivent la position choisie.
+
+Three Wonders / Wonder 3
+    SELECT insère un crédit. Sur l’écran de la borne, choisis l’un des
+    trois jeux avec gauche/droite, puis valide avec START.
+
+Changer les touches
+
+Touche RÉGLER, puis « Touches du joueur ». Touche le bouton physique
+à changer, par exemple A, puis « Poing fort ». Répète pour tes autres
+boutons. SAUVER ou START mémorise le profil. « Reprendre le jeu » revient
+à la partie. Les boutons, les gâchettes, START, SELECT, la croix et le
+Circle Pad se règlent séparément. Deux boutons peuvent servir à la même
+action. Les raccourcis SELECT + START et L + R + START restent réservés.
+Tes choix sont mémorisés par set sur la carte SD dans
+/3ds/AstraCPS1/config/. L’écran de jeu rappelle les affectations actives.
+
+Régler les interrupteurs de la borne
+
+Touche RÉGLER, puis « DIP switches de la borne ». Les choix proviennent
+du pilote du jeu en cours. Pour jouer sans pièces, choisis « Jeu gratuit »
+puis « Activé ». La difficulté se règle dans la même liste. Appuie sur
+SAUVER puis confirme « Enregistrer et redémarrer ». Le jeu repart du début
+avec les nouvelles positions et les retrouve au prochain lancement.
+« Rétablir les DIP par défaut » permet de revenir aux réglages initiaux.
+Ces deux jeux utilisent directement leurs archives CPS1. Aucun BIOS
+supplémentaire à installer pour les DIP.
+
+Cadence et mesures
+
+Auto ajuste le nombre de dessins au temps que demande la scène.
+30 i/s vise une image toutes les 33,5 ms et réduit le nombre de dessins
+si la scène devient trop lourde. 1 sur 2 dessine une trame arcade sur deux.
+Toutes demande une image à chaque trame. Les quatre cadences lisent les
+commandes et calculent le jeu ainsi que le son à chaque trame arcade.
+
+SON CONTINU est actif au départ dans les quatre modes. Il garde une petite
+réserve de musique et allonge progressivement de courts fragments stéréo
+quand la console prend du retard. Une forte baisse de vitesse peut encore
+s’entendre. Touche cette ligne pour comparer avec SON ARCADE, qui transmet
+directement les échantillons du jeu au DSP.
+
+Variantes avec une limite sonore connue
+    Les copies dinopic, dinopic2, punipic, punipic2 et punipic3 utilisent
+    une puce PIC dont ce pilote ne restitue pas le son. Les versions
+    dino.zip et punisher.zip disposent de leur circuit sonore émulé.
+    Pour wofh.zip, le lancement propose un essai sans sons échantillonnés
+    si sgyxz_snd1.bin manque (CRC c15ac0f2). Le chargeur accepte cette
+    puce dans sgyxz.zip placé dans le même dossier que wofh.zip.
+
+Vitesse       100 % correspond à la cadence de la borne, 59,63 trames/s.
+Émulation     Trames de jeu calculées par seconde.
+Dessinées     Images dessinées par le cœur par seconde.
+Affichage     Images soumises à l’écran par seconde.
+Avec / sans   Durée CPU moyenne d’une trame avec / sans dessin.
+Audio         Les compteurs « vides » et « pleins » signalent les ruptures
+              et les blocs perdus depuis le début du jeu ou le dernier
+              changement de cadence ou de mode sonore.
+
+Une pression sur PAUSE fige les dernières mesures. Pour comparer deux
+versions, relève Vitesse et Affichage en jouant le même passage. L’image
+4:3 occupe 320 × 240 pixels au centre de l’écran supérieur. Le mode natif
+affiche 384 × 224 pixels. Le DSP restitue le son en stéréo à 22 050 Hz.
+
+Pourquoi plus d’images arrivent à l’écran
+
+1. Le jeu avance sur l’horloge de la borne. Auto estime combien de dessins
+   la console peut terminer sans retarder les commandes, le jeu et le son.
+2. Quand des morceaux de décor se répètent, le moteur réutilise les tuiles
+   déjà coloriées. Il actualise son dessin quand le décor ou sa palette
+   change. Un mur fixe demande ainsi moins de travail pendant un combat.
+3. Le processeur principal envoie l’image à la puce graphique, qui se
+   charge de la rotation et du redimensionnement pour l’écran du haut.
+4. Certains programmes d’origine passent beaucoup de temps dans des
+   boucles d’attente. Pour les séquences vérifiées, le moteur comptabilise
+   cette attente plus vite. Il accélère aussi le calcul des canaux sonores
+   silencieux. Sur le test de Final Fight, les échantillons stéréo obtenus
+   sont identiques entre v0.1 et v0.2.
+5. Depuis la v0.3, la console peut préparer un dessin pendant que l’écran
+   termine le précédent. Si plusieurs dessins sont prêts successivement,
+   le plus récent reste disponible pour le prochain affichage.
+
+6. Depuis la v0.4, la révision World 910522 de Street Fighter II dispose
+   d’optimisations choisies à l’ouverture du ZIP. Le 68000 et le Z80
+   regroupent les tours d’attente déjà vérifiés. Le moteur garde des bandes
+   du décor en coordonnées de la carte, puis les recopie selon la position
+   de la caméra. Les instruments FM compatibles sont calculés par blocs
+   avec le même rythme, la même stéréo et les mêmes échantillons.
+
+Jeux
+
+Parmi les jeux testés figurent Final Fight (World) et Street Fighter II:
+The World Warrior (World 910522). Le catalogue intègre aussi plusieurs
+révisions de ces familles, Champion Edition, Hyper Fighting et des pilotes
+de jeux CPS1 supplémentaires. La présence d’un ZIP dans le menu indique
+que le fichier a été trouvé. Le chargement vérifie ensuite la correspondance
+avec un pilote. Les autres révisions demandent un essai avec leur propre ZIP.
+
+Crédits
+
+Émulation d’après Final Burn, Team FB Alpha, FBA2X (HeadOverHeels) et
+PiFBA (Squid). Cyclone 68000 par Dave et notaz. Z80 par Juergen
+Buchmueller, CZ80 par Stéphane Dallongeville. YM2151 par Jarek Burczynski.
+Décompression ZIP avec MiniZip et zlib. Interface Nintendo 3DS basée sur
+libctru, citro3d et devkitARM. Les jeux appartiennent à leurs ayants droit.
+Sources et notices dans le ZIP public.
