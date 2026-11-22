@@ -16,7 +16,7 @@ OBJ := out/obj
 APP := out/AstraCPS1
 include build/display.mk
 include build/compat.mk
-APP_C := app/main.c app/display.c app/sound.c app/stretch.c app/pacing.c app/library.c app/menu.c app/bindings.c app/settings.c
+APP_C := app/main.c app/language.c app/display.c app/sound.c app/stretch.c app/pacing.c app/library.c app/menu.c app/bindings.c app/settings.c
 OBJECTS := $(addprefix $(OBJ)/,$(addsuffix .o,$(CORE_C) $(CORE_CPP) $(CORE_ASM) engine/ffight_idle.cpp engine/idle_branch.s $(APP_C)))
 OBJECTS += $(DISPLAY_OBJECTS) out/extra/compat.o
 

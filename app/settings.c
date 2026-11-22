@@ -1,3 +1,4 @@
+#include "ui_language.h"
 #include <3ds.h>
 #include <stdio.h>
 #include <string.h>
@@ -19,6 +20,7 @@ static const char *translation(const char *s)
         {"Continue Coin", "Tarif pour continuer"}, {"On", "Active"}, {"Off", "Desactive"}
     };
     if (!s) return "-";
+    if (ui_english) return s;
     for (size_t i = 0; i < sizeof(words)/sizeof(*words); ++i)
         if (!strcmp(words[i].from, s)) return words[i].to;
     return s;
@@ -40,10 +42,10 @@ static int pick(const char *title, const char *detail, const Text *labels, int c
                        i == selected ? "\x1b[1;36m" : "", i == selected ? '>' : ' ', labels[i]);
             }
             printf("\x1b[22;1H%.39s\n", hint);
-            printf("A choisir   B retour   Page %d/%d\n", first/ROWS+1, (count+ROWS-1)/ROWS);
-            if (save) printf("START enregistrer\n");
+            printf(ui_text("A choisir   B retour   Page %d/%d\n", "A select    B back     Page %d/%d\n"), first/ROWS+1, (count+ROWS-1)/ROWS);
+            if (save) printf(ui_text("START enregistrer\n", "START save\n"));
             printf("\x1b[28;1H\x1b[1;36m%-10s%-10s%-10s%s\x1b[0m",
-                   "  < PAGE", " RETOUR", save ? " SAUVER" : "", "  PAGE >");
+                   "  < PAGE", ui_text(" RETOUR", " BACK"), save ? ui_text(" SAUVER", " SAVE") : "", "  PAGE >");
             display_flush_console();
             dirty = false;
         }
@@ -80,9 +82,10 @@ static int pick(const char *title, const char *detail, const Text *labels, int c
 
 static bool save_problem(void)
 {
-    const Text options[] = {"Reessayer", "Annuler"};
-    return pick("SAUVEGARDE IMPOSSIBLE", "Verifie l'ecriture de la carte SD.", options,
-                2, 0, false, "La partie reste en pause.") == 0;
+    const Text fr[] = {"Reessayer", "Annuler"};
+    const Text en[] = {"Try again", "Cancel"};
+    return pick(ui_text("SAUVEGARDE IMPOSSIBLE", "COULD NOT SAVE"), ui_text("Verifie l'ecriture de la carte SD.", "Check that the SD card is writable."), ui_english ? en : fr,
+                2, 0, false, ui_text("La partie reste en pause.", "The game is still paused.")) == 0;
 }
 
 static void edit_buttons(int game, Bindings *active)
@@ -97,9 +100,9 @@ static void edit_buttons(int game, Bindings *active)
         for (int i = 0; i < BIND_SLOT_COUNT; ++i)
             snprintf(keys[i], LABEL, "%-11s %.24s", bindings_key_name(i),
                      bindings_action_name(draft.action[i], actions, ffight));
-        strcpy(keys[BIND_SLOT_COUNT], "Retablir les touches par defaut");
-        row = pick("TOUCHES", cps1_game_title(game), keys, BIND_SLOT_COUNT + 1,
-                   row, true, "Choisis un bouton a reaffecter.");
+        strcpy(keys[BIND_SLOT_COUNT], ui_text("Retablir les touches par defaut", "Restore default buttons"));
+        row = pick(ui_text("TOUCHES", "BUTTONS"), cps1_game_title(game), keys, BIND_SLOT_COUNT + 1,
+                   row, true, ui_text("Choisis un bouton a reaffecter.", "Choose a button to remap."));
         if (row == SAVE) {
             if (memcmp(&draft, active, sizeof(draft)) == 0) return;
             while (!bindings_save(&draft, id)) if (!save_problem()) return;
@@ -120,8 +123,8 @@ static void edit_buttons(int game, Bindings *active)
             map[n] = (BindAction)a;
             snprintf(choices[n++], LABEL, "%s", bindings_action_name((BindAction)a, actions, ffight));
         }
-        int value = pick("AFFECTER UNE ACTION", bindings_key_name(row), choices, n,
-                         selected, false, "Choisis l'action de ce bouton.");
+        int value = pick(ui_text("AFFECTER UNE ACTION", "ASSIGN AN ACTION"), bindings_key_name(row), choices, n,
+                         selected, false, ui_text("Choisis l'action de ce bouton.", "Choose the action for this button."));
         if (value >= 0) draft.action[row] = map[value];
     }
 }
@@ -186,14 +189,15 @@ static bool edit_dips(int game)
             const char *value = translation(cps1_dip_option_name(i, draft.option[i]));
             snprintf(groups[i], LABEL, "%.18s   %.15s", name, value);
         }
-        strcpy(groups[draft.count], "Retablir les DIP par defaut");
-        row = pick("INTERRUPTEURS DE LA BORNE", cps1_game_title(game), groups,
-                   draft.count + 1, row, true, "Sauver les DIP redemarre la partie.");
+        strcpy(groups[draft.count], ui_text("Retablir les DIP par defaut", "Restore default DIP switches"));
+        row = pick(ui_text("INTERRUPTEURS DE LA BORNE", "CABINET DIP SWITCHES"), cps1_game_title(game), groups,
+                   draft.count + 1, row, true, ui_text("Sauver les DIP redemarre la partie.", "Saving changes restarts the cabinet."));
         if (row == SAVE) {
             if (!memcmp(original.option, draft.option, draft.count)) return false;
-            const Text choices[] = {"Enregistrer et redemarrer", "Continuer les reglages"};
-            int answer = pick("REDEMARRER LA BORNE ?", "La partie en cours sera terminee.", choices,
-                              2, 1, false, "Les nouveaux DIP seront memorises.");
+            const Text fr[] = {"Enregistrer et redemarrer", "Continuer les reglages"};
+            const Text en[] = {"Save and restart", "Keep editing"};
+            int answer = pick(ui_text("REDEMARRER LA BORNE ?", "RESTART THE CABINET?"), ui_text("La partie en cours sera terminee.", "The current game will end."), ui_english ? en : fr,
+                              2, 1, false, ui_text("Les nouveaux DIP seront memorises.", "The new switches will be saved."));
             if (answer != 0) { row = 0; continue; }
             while (!profile_write(id, "dip", &draft, sizeof(draft))) if (!save_problem()) return false;
             set_dips(&draft);
@@ -211,21 +215,32 @@ static bool edit_dips(int game)
         Text choices[n];
         for (int i = 0; i < n; ++i)
             snprintf(choices[i], LABEL, "%s", translation(cps1_dip_option_name(row,i)));
-        int value = pick("REGLER UN INTERRUPTEUR", translation(cps1_dip_name(row)),
-                         choices, n, draft.option[row], false, "Choisis une position.");
+        int value = pick(ui_text("REGLER UN INTERRUPTEUR", "SET A DIP SWITCH"), translation(cps1_dip_name(row)),
+                         choices, n, draft.option[row], false, ui_text("Choisis une position.", "Choose a position."));
         if (value >= 0) draft.option[row] = (uint8_t)value;
     }
 }
 
+void settings_language(void)
+{
+    const Text choices[] = {"Francais", "English"};
+    int selected = pick("LANGUE / LANGUAGE", "Francais / English", choices, 2,
+                        ui_english ? 1 : 0, false, ui_text("Choisis la langue des menus.", "Choose the menu language."));
+    if (selected < 0) return;
+    while (!language_save(selected == 1)) if (!save_problem()) return;
+}
+
 bool settings_edit(int game, Bindings *bindings)
 {
-    const Text choices[] = {"Touches du joueur", "DIP switches de la borne", "Reprendre le jeu"};
+    const Text fr[] = {"Touches du joueur", "DIP switches de la borne", "Langue / Language", "Reprendre le jeu"};
+    const Text en[] = {"Player controls", "Cabinet DIP switches", "Language / Langue", "Resume game"};
     int row = 0;
     while (aptMainLoop()) {
-        row = pick("REGLAGES DU JEU", cps1_game_title(game), choices, 3, row, false,
-                   "Les reglages sont propres a ce jeu.");
+        row = pick(ui_text("REGLAGES DU JEU", "GAME SETTINGS"), cps1_game_title(game), ui_english ? en : fr, 4, row, false,
+                   ui_text("Les reglages sont propres a ce jeu.", "Controls and DIP switches are per game."));
         if (row == 0) edit_buttons(game, bindings);
         else if (row == 1) { if (edit_dips(game)) return true; }
+        else if (row == 2) settings_language();
         else break;
     }
     return false;

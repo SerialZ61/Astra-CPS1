@@ -1,5 +1,7 @@
 # Playing on an Old 3DS
 
+In v0.6b, press **Y** in the library or tap **Francais / English**. During play tap **CONFIG → Language / Langue**. The choice is saved globally, separately from button and DIP profiles. The original v0.6a menus use the French labels shown below.
+
 Use the `3ds` directory in the forum ZIP. Your emulator launches from `/3ds/AstraCPS1/AstraCPS1.3dsx`. The main ROM folder is `/3ds/AstraCPS1/roms/`. The library opens the selected ZIP on demand and checks chip sizes and CRCs. An unfamiliar ZIP filename can appear before the loader has identified a supported set. If the loader asks for a parent, keep the parent archive next to the clone. X rescans the card. Left and right change pages.
 
 | In-game touch control in v0.6a | Purpose |

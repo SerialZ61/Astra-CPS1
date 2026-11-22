@@ -1,3 +1,4 @@
+#include "ui_language.h"
 #include "romzip.h"
 #include "cps1.h"
 #include "unzip.h"
@@ -207,7 +208,7 @@ bool read_chips(std::vector<Chip> &chips, const std::vector<Directory> &archives
                 if (c.directory != (int)i || c.data || c.key.crc != info.crc ||
                     c.key.size != info.uncompressed_size) continue;
                 if (!extract(zip, c)) {
-                    std::snprintf(error, capacity, "Lecture/CRC impossible : %s (%08lx).",
+                    std::snprintf(error, capacity, ui_text("Lecture/CRC impossible : %s (%08lx).", "Read/CRC failed: %s (%08lx)."),
                                   c.name, (unsigned long)c.key.crc);
                     unzClose(zip);
                     return false;
@@ -218,7 +219,7 @@ bool read_chips(std::vector<Chip> &chips, const std::vector<Directory> &archives
         }
         if (zip) unzClose(zip);
         if (remaining) {
-            std::snprintf(error, capacity, "ZIP illisible pendant le chargement.");
+            std::snprintf(error, capacity, ui_text("ZIP illisible pendant le chargement.", "Could not read ZIP during loading."));
             return false;
         }
     }
@@ -232,13 +233,13 @@ int romzip_prepare(const char *path, int requested, char *error, size_t capacity
     if (!error || !capacity) return -1;
     error[0] = 0;
     if (!path || requested < -1 || requested >= cps1_game_count()) {
-        std::snprintf(error, capacity, "Selection de jeu invalide.");
+        std::snprintf(error, capacity, ui_text("Selection de jeu invalide.", "Invalid game selection."));
         return -1;
     }
     std::vector<Directory> archives;
     archives.emplace_back(path);
     if (!archives[0].valid) {
-        std::snprintf(error, capacity, "Impossible de lire le repertoire du ZIP.");
+        std::snprintf(error, capacity, ui_text("Impossible de lire le repertoire du ZIP.", "Could not read the ZIP directory."));
         return -1;
     }
     int named = find_id(set_name(path));
@@ -314,14 +315,14 @@ int romzip_prepare(const char *path, int requested, char *error, size_t capacity
             auto it = std::find_if(chips.begin(), chips.end(), [](const Chip &c) {
                 return c.key.size && c.key.crc && c.directory < 0 && !c.data;
             });
-            std::snprintf(error, capacity, "%s : puce %s (%08lx) absente.%s%s%s",
+            std::snprintf(error, capacity, ui_text("%s : puce %s (%08lx) absente.%s%s%s", "%s: missing chip %s (%08lx).%s%s%s"),
                           cps1_game_id(pick.game), it->name, (unsigned long)it->key.crc,
-                          parent_id && *parent_id ? " Parent : " : "",
+                          parent_id && *parent_id ? ui_text(" Parent : ", " Parent: ") : "",
                           parent_id && *parent_id ? parent_id : "",
                           parent_id && *parent_id ? ".zip" : "");
         }
     }
-    if (!error[0]) std::snprintf(error, capacity, "Jeu CPS1 inconnu ou revision non prise en charge.");
+    if (!error[0]) std::snprintf(error, capacity, ui_text("Jeu CPS1 inconnu ou revision non prise en charge.", "Unknown CPS1 game or unsupported revision."));
     return -1;
 }
 

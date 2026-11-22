@@ -1,3 +1,4 @@
+#include "ui_language.h"
 #include "bindings.h"
 #include "cps1.h"
 #include <3ds/types.h>
@@ -52,7 +53,12 @@ bool bindings_allowed(BindAction action, int actions)
 
 const char *bindings_key_name(int slot)
 {
-    return (unsigned)slot < BIND_SLOT_COUNT ? slots[slot].name : "";
+    static const char *const directions[] = {
+        "D-pad up", "D-pad down", "D-pad left", "D-pad right",
+        "Pad up", "Pad down", "Pad left", "Pad right"
+    };
+    if ((unsigned)slot >= BIND_SLOT_COUNT) return "";
+    return ui_english && slot >= 8 ? directions[slot-8] : slots[slot].name;
 }
 
 const char *bindings_action_name(BindAction action, int actions, bool final_fight)
@@ -62,14 +68,19 @@ const char *bindings_action_name(BindAction action, int actions, bool final_figh
         "Action 6", "Actions 1+2", "Pause", "Cadence", "Format" };
     static const char *const fighters[] = { "Poing leger", "Poing moyen", "Poing fort",
         "Pied leger", "Pied moyen", "Pied fort" };
+    static const char *const labels_en[] = { "None", "Up", "Down", "Left", "Right",
+        "Coin", "Start", "Action 1", "Action 2", "Action 3", "Action 4", "Action 5",
+        "Action 6", "Actions 1+2", "Pause", "Pacing", "Format" };
+    static const char *const fighters_en[] = { "Light punch", "Medium punch", "Heavy punch",
+        "Light kick", "Medium kick", "Heavy kick" };
     if ((unsigned)action >= BIND_ACTION_COUNT) return "";
-    if (actions == 6 && action >= BIND_1 && action <= BIND_6) return fighters[action - BIND_1];
+    if (actions == 6 && action >= BIND_1 && action <= BIND_6) return (ui_english ? fighters_en : fighters)[action - BIND_1];
     if (final_fight) {
-        if (action == BIND_1) return "Attaque";
-        if (action == BIND_2) return "Saut";
-        if (action == BIND_COMBO) return "Attaque + saut";
+        if (action == BIND_1) return ui_text("Attaque", "Attack");
+        if (action == BIND_2) return ui_text("Saut", "Jump");
+        if (action == BIND_COMBO) return ui_text("Attaque + saut", "Attack + jump");
     }
-    return labels[action];
+    return (ui_english ? labels_en : labels)[action];
 }
 
 uint32_t bindings_buttons(const Bindings *map, uint32_t held)

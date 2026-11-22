@@ -1,4 +1,10 @@
-﻿ASTRA CPS1 v0.6a pour Old 3DS
+﻿ASTRA CPS1 v0.6b pour Old 3DS
+
+Langue des menus
+
+Dans la liste des jeux, appuie sur Y ou touche Francais / English.
+En partie, touche RÉGLER (CONFIG), puis Langue / Language.
+Le choix est conservé sur la carte, indépendamment des profils de jeu.
 
 Installer et choisir un jeu
 

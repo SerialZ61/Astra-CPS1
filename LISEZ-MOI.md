@@ -1,6 +1,6 @@
 # Astra CPS1 pour Old Nintendo 3DS
 
-**[Télécharger le ZIP public v0.6a](https://github.com/SerialZ61/Astra-CPS1/releases/download/v0.6a/Astra-CPS1-v0.6a-public.zip)** · [Toutes les versions](https://github.com/SerialZ61/Astra-CPS1/releases) · [English](README.md)
+**[Télécharger la v0.6b — français / anglais](https://github.com/SerialZ61/Astra-CPS1/releases/download/v0.6b/Astra-CPS1-v0.6b-public.zip)** · **[Télécharger le ZIP public v0.6a](https://github.com/SerialZ61/Astra-CPS1/releases/download/v0.6a/Astra-CPS1-v0.6a-public.zip)** · [Toutes les versions](https://github.com/SerialZ61/Astra-CPS1/releases) · [English](README.md)
 
 Ce homebrew permet de jouer aux jeux d’arcade CPS1 sur la première génération de Nintendo 3DS. La v0.6a est la version de référence essayée sur la console de SerialZ. L’archive regroupe le programme, le code source correspondant, les notices et le journal du développement.
 
@@ -12,6 +12,10 @@ Ce homebrew permet de jouer aux jeux d’arcade CPS1 sur la première générati
 4. SELECT insère une pièce. START commence la partie. **RÉGLER** donne accès aux touches et aux DIP. SELECT + START revient à la liste. L + R + START quitte l’application.
 
 **CADENCE** permet de choisir Auto, 30 i/s, 1 sur 2 ou Toutes. **FORMAT** permet notamment de jouer console tournée à *1941*, avec les directions qui suivent l’écran. Toucher **SON CONTINU** permet de comparer le traitement adaptatif avec le son arcade. [Guide détaillé](LIRE-MOI.txt)
+
+## Choisir la langue en v0.6b
+
+Dans la liste des jeux, appuyer sur **Y** ou toucher **Francais / English**. En partie, ouvrir **RÉGLER / CONFIG**, puis **Langue / Language**. Le choix est mémorisé sur la SD. Au premier lancement, une console réglée en français démarre en français. Les autres démarrent en anglais. La langue du jeu dépend de sa ROM.
 
 ## Versions et compatibilité
 

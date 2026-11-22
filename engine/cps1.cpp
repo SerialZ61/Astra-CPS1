@@ -1,3 +1,4 @@
+#include "ui_language.h"
 #include "cps1.h"
 #include "cps.h"
 #include "romzip.h"
@@ -70,7 +71,7 @@ int cps1_open_game(int requested, const char *path)
         if (result) {
             astra_extra_api.close();
             useExtra = false;
-            snprintf(message, sizeof(message), "Echec du pilote %.96s.", cps1_game_title(game));
+            snprintf(message, sizeof(message), ui_text("Echec du pilote %.96s.", "Could not start driver %.96s."), cps1_game_title(game));
             return 1;
         }
         current = game;
@@ -103,7 +104,7 @@ int cps1_open_game(int requested, const char *path)
         BurnDrvExit();
         BurnLibExit();
         Z80SetIdleRomCrc(0);
-        snprintf(message, sizeof(message), "Echec du pilote %.96s.", cps1_game_title(game));
+        snprintf(message, sizeof(message), ui_text("Echec du pilote %.96s.", "Could not start driver %.96s."), cps1_game_title(game));
         return 1;
     }
     current = game;
@@ -149,14 +150,14 @@ int cps1_frame(uint32_t buttons, uint16_t *video, int16_t *audio)
     if (useExtra) {
         int result = astra_extra_api.frame(video, pBurnSoundOut, nBurnSoundLen);
         astra_extra_api.reset(false);
-        if (result) snprintf(message, sizeof(message), "Erreur pendant l'emulation.");
+        if (result) snprintf(message, sizeof(message), ui_text("Erreur pendant l'emulation.", "Emulation error."));
         return result ? -1 : nBurnSoundLen;
     }
     pBurnDraw = reinterpret_cast<unsigned char *>(video);
     int result = BurnDrvFrame();
     CpsReset = 0;
     if (result != 0) {
-        snprintf(message, sizeof(message), "Erreur pendant l'emulation.");
+        snprintf(message, sizeof(message), ui_text("Erreur pendant l'emulation.", "Emulation error."));
         return -1;
     }
     // CPS-A VIDEOCTRL bit 15 reverses both scan directions on the monitor.

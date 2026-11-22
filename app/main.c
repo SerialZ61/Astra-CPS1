@@ -1,3 +1,4 @@
+#include "ui_language.h"
 #include <3ds.h>
 #include <stdio.h>
 #include <string.h>
@@ -12,6 +13,7 @@
 
 static int16_t pcm[CPS1_MAX_SAMPLES * 2];
 static const char *const modes[] = { "Auto", "30 i/s", "1 sur 2", "Toutes" };
+static const char *const modes_en[] = { "Auto", "30 fps", "1 in 2", "All" };
 static bool native;
 static bool continuous = true;
 static enum cabinet_view view, preferred_portrait = VIEW_PORTRAIT;
@@ -26,7 +28,7 @@ static void apt_event(APT_HookType event, void *unused)
 
 static void status_layout(int game, const Bindings *bindings)
 {
-    printf("\x1b[2J\x1b[1;1H\x1b[1;36mASTRA CPS1\x1b[0m  /  OLD 3DS   v0.6a\n");
+    printf("\x1b[2J\x1b[1;1H\x1b[1;36mASTRA CPS1\x1b[0m  /  OLD 3DS   v0.6b\n");
     printf("%.38s\n\n", cps1_game_title(game));
     int actions = cps1_game_buttons(game);
     bool ffight = !strncmp(cps1_game_id(game), "ffight", 6);
@@ -38,18 +40,18 @@ static void status_layout(int game, const Bindings *bindings)
     printf("START  %.13s   SELECT  %.12s\n",
            bindings_action_name(bindings->action[6], actions, ffight),
            bindings_action_name(bindings->action[7], actions, ffight));
-    printf("SELECT+START  Jeux   L+R+START  Quitter\n");
+    printf(ui_text("SELECT+START  Jeux   L+R+START  Quitter\n", "SELECT+START  Games  L+R+START  Exit\n"));
 }
 
 static void show_mode(bool paused, bool audio)
 {
-    printf("\x1b[12;1HCadence %-9s    Vue %-10s", modes[mode], view == VIEW_PORTRAIT ? "Portrait" : view == VIEW_DPAD_TOP ? "Croix haut" : view == VIEW_DPAD_BOTTOM ? "Croix bas" : native ? "384 x 224" : "4:3 arcade");
-    printf("\x1b[13;1H%-9s  Ecran %s   %s     ", paused ? "En pause" : "En jeu",
-           display_is_accelerated() ? "GPU" : "CPU", audio ? "DSP 22 050 Hz" : "Sans DSP");
+    printf(ui_text("\x1b[12;1HCadence %-9s    Vue %-10s", "\x1b[12;1HPacing %-9s    View %-10s"), (ui_english ? modes_en : modes)[mode], view == VIEW_PORTRAIT ? "Portrait" : view == VIEW_DPAD_TOP ? ui_text("Croix haut", "D-pad top") : view == VIEW_DPAD_BOTTOM ? ui_text("Croix bas", "D-pad down") : native ? "384 x 224" : "4:3 arcade");
+    printf(ui_text("\x1b[13;1H%-9s  Ecran %s   %s     ", "\x1b[13;1H%-9s  Screen %s   %s     "), paused ? ui_text("En pause", "Paused") : ui_text("En jeu", "Playing"),
+           display_is_accelerated() ? "GPU" : "CPU", audio ? "DSP 22 050 Hz" : ui_text("Sans DSP", "No DSP"));
     printf("\x1b[24;1H%-39s", audio ?
-           (continuous ? "[ SON CONTINU ]  Toucher pour changer" : "[ SON ARCADE ]   Toucher pour changer") : "");
+           (continuous ? ui_text("[ SON CONTINU ]  Toucher pour changer", "[ ADAPTIVE AUDIO ]  Tap to change") : ui_text("[ SON ARCADE ]   Toucher pour changer", "[ ARCADE AUDIO ]    Tap to change")) : "");
     printf("\x1b[28;1H\x1b[1;36m%-8s%-8s%-8s%-8s%s\x1b[0m",
-           paused ? "REPRISE" : " PAUSE", "CADENCE", " FORMAT", " REGLER", "  JEUX");
+           paused ? ui_text("REPRISE", "RESUME") : " PAUSE", ui_text("CADENCE", "PACING"), " FORMAT", ui_text(" REGLER", " CONFIG"), ui_text("  JEUX", "  GAMES"));
     display_flush_console();
 }
 
@@ -79,7 +81,8 @@ static bool play_game(const char *path, bool audio)
     unsigned underruns = sound_underruns(), drops = sound_drops();
     const u64 ticks_per_frame = (u64)SYSCLOCK_ARM11 * CPS1_FPS_DEN / CPS1_FPS_NUM;
     u64 deadline, window_start, drawn_ticks = 0, plain_ticks = 0;
-    char last_stats[320] = "Mesure en cours...";
+    char last_stats[320];
+    strcpy(last_stats, ui_text("Mesure en cours...", "Measuring..."));
     FramePacer pacer;
     pacing_reset(&pacer, ticks_per_frame);
     status_layout(game, &bindings);
@@ -102,7 +105,7 @@ static bool play_game(const char *path, bool audio)
             clock_reset = true;
             underruns = sound_underruns();
             drops = sound_drops();
-            strcpy(last_stats, "Mesure en cours...");
+            strcpy(last_stats, ui_text("Mesure en cours...", "Measuring..."));
             status_layout(game, &bindings);
             printf("\x1b[16;1H%s", last_stats);
             show_mode(paused, audio);
@@ -110,11 +113,13 @@ static bool play_game(const char *path, bool audio)
 
         if (tap == TOUCH_SETTINGS) {
             sound_reset();
+            bool previous_language = ui_english;
             if (settings_edit(game, &bindings)) {
                 paused = false;
-                strcpy(last_stats, "Mesure en cours...");
+                strcpy(last_stats, ui_text("Mesure en cours...", "Measuring..."));
                 pacing_reset(&pacer, ticks_per_frame);
             }
+            if (ui_english != previous_language) strcpy(last_stats, ui_text("Mesure en cours...", "Measuring..."));
             clock_reset = true;
             status_layout(game, &bindings);
             printf("\x1b[16;1H%s", last_stats);
@@ -127,7 +132,7 @@ static bool play_game(const char *path, bool audio)
             clock_reset = true;
             underruns = sound_underruns();
             drops = sound_drops();
-            strcpy(last_stats, "Mesure en cours...");
+            strcpy(last_stats, ui_text("Mesure en cours...", "Measuring..."));
             status_layout(game, &bindings);
             printf("\x1b[16;1H%s", last_stats);
             show_mode(paused, audio);
@@ -189,12 +194,15 @@ static bool play_game(const char *path, bool audio)
             uint32_t screen_now = display_submissions();
             unsigned plain_frames = measured_frames - measured_draws;
             char sound_stats[64] = "";
-            if (audio) snprintf(sound_stats, sizeof(sound_stats), "Audio vides %u / pleins %u    ",
+            if (audio) snprintf(sound_stats, sizeof(sound_stats), ui_text("Audio vides %u / pleins %u    ", "Audio empty %u / full %u    "),
                                 sound_underruns() - underruns, sound_drops() - drops);
             snprintf(last_stats, sizeof(last_stats),
-                     "Vitesse       %5.1f %%    \nEmulation     %5.1f images/s\n"
+                     ui_text("Vitesse       %5.1f %%    \nEmulation     %5.1f images/s\n"
                      "Affichage     %5.1f images/s\nDessinees     %5.1f images/s\n"
                      "Avec image    %5.1f ms\nSans image    %5.1f ms\n%s",
+                     "Speed         %5.1f %%    \nEmulation     %5.1f fps\n"
+                     "Display       %5.1f fps\nDrawn         %5.1f fps\n"
+                     "With drawing  %5.1f ms\nWithout draw  %5.1f ms\n%s"),
                      rate * 100 * CPS1_FPS_DEN / CPS1_FPS_NUM, rate,
                      (screen_now - screen_start) / seconds, measured_draws / seconds,
                      measured_draws ? drawn_ticks * tick_ms / measured_draws : 0.0f,
@@ -222,6 +230,7 @@ static bool play_game(const char *path, bool audio)
 
 int main(int argc, char **argv)
 {
+    language_load();
     display_init();
     RomLibrary library = {0};
     library_scan(&library);
@@ -245,7 +254,7 @@ int main(int argc, char **argv)
             last = selected;
             selected = -1;
         }
-        printf("\x1b[2J\x1b[1;1HASTRA CPS1\n\nChargement...\n%.39s", library_filename(path));
+        printf(ui_text("\x1b[2J\x1b[1;1HASTRA CPS1\n\nChargement...\n%.39s", "\x1b[2J\x1b[1;1HASTRA CPS1\n\nLoading...\n%.39s"), library_filename(path));
         display_flush_console();
         if (cps1_open(path) != 0) {
             menu_error(path, cps1_error());

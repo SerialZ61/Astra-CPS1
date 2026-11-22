@@ -2,16 +2,18 @@
 
 A native Capcom Play System 1 arcade emulator for the **original Nintendo 3DS**, distributed as a Homebrew Launcher application. The top screen shows the game. The touch screen handles the ROM library, controls, arcade DIP switches, frame pacing, sound and performance counters.
 
-**[Download the v0.6a forum ZIP](https://github.com/SerialZ61/Astra-CPS1/releases/download/v0.6a/Astra-CPS1-v0.6a-public.zip)** · [All releases](https://github.com/SerialZ61/Astra-CPS1/releases) · [Français](LISEZ-MOI.md)
+**[Download v0.6b — English / Français](https://github.com/SerialZ61/Astra-CPS1/releases/download/v0.6b/Astra-CPS1-v0.6b-public.zip)** · **[Download the v0.6a forum ZIP](https://github.com/SerialZ61/Astra-CPS1/releases/download/v0.6a/Astra-CPS1-v0.6a-public.zip)** · [All releases](https://github.com/SerialZ61/Astra-CPS1/releases) · [Français](LISEZ-MOI.md)
 
 ## Install and play
 
 1. Extract the `3ds` folder from the public release ZIP onto the root of your SD card.
 2. Put your own CPS1 ZIP files in `/3ds/AstraCPS1/roms/`. Leave them compressed. For a split clone, put its parent ZIP beside it.
 3. Launch **Astra CPS1** from the Homebrew Launcher. One ZIP starts automatically. With several ZIPs, use the D-pad and A or the touch screen.
-4. SELECT inserts a coin. START starts the game. Open **RÉGLER** to remap the buttons and set the cabinet's DIP switches. Settings are saved per set. SELECT + START returns to the library. L + R + START exits.
+4. SELECT inserts a coin. START starts the game. Open **CONFIG / RÉGLER** to remap the buttons and set the cabinet's DIP switches. Settings are saved per set. SELECT + START returns to the library. L + R + START exits.
 
-The v0.6a interface is in French. **CADENCE** cycles through automatic pacing, a wall-clock target of 29.8 displayed frames/s, every other arcade frame, and every frame. **FORMAT** changes the aspect ratio. For vertical games it also rotates the controls and the picture together. Tap **SON CONTINU** to switch between adaptive and original audio. [English controls and troubleshooting](docs/GUIDE.en.md)
+**Choosing a language in v0.6b.** In the library press **Y** or tap **Francais / English**. During play, open **CONFIG / RÉGLER** and select **Language / Langue**. The selection is saved on the SD and works even when a single ROM starts automatically. A French system starts in French. Other system languages start in English. Cabinet games retain the language of their ROM revision.
+
+The original v0.6a interface is in French. **CADENCE** cycles through automatic pacing, a wall-clock target of 29.8 displayed frames/s, every other arcade frame, and every frame. **FORMAT** changes the aspect ratio. For vertical games it also rotates the controls and the picture together. Tap **SON CONTINU** to switch between adaptive and original audio. [English controls and troubleshooting](docs/GUIDE.en.md)
 
 ## Compatibility
 
